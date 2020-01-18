@@ -91,7 +91,7 @@ def binary_search_std_lib(sorted_array, target):
     import bisect
 
     index = bisect.bisect_left(sorted_array, target)
-    # 1st check if you haven't reached end of array
+    # 1st check if you haven't reached end of array. NOTE it's len(a) not len(a) - 1
     # 2nd check if elem at index == target
     if index != len(sorted_array) and sorted_array[index] == target:
         return index
